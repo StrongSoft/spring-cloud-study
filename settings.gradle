@@ -1,0 +1,4 @@
+rootProject.name = 'spring-cloud-study'
+include 'product'
+include 'eureka-server'
+include 'display'
