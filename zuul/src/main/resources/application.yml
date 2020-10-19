@@ -1,0 +1,23 @@
+zuul:
+  routes:
+    display:
+      path: /displays/**
+      url: http://localhost:8081
+      stripPrefix: false
+    product:
+      path: /products/**
+      url: http://localhost:8082
+      stripPrefix: false
+  # 예외, 무시 처리
+  ignored-services: '*'
+  ignored-patterns: /**/admin/**
+  # 타임 아웃 설정
+  host:
+    connect-timeout-millis: 3000
+    socket-timeout-millis: 3000
+server:
+  port: 8080
+
+ribbon:
+  eureka:
+    enabled: false

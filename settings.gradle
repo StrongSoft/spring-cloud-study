@@ -2,3 +2,6 @@ rootProject.name = 'spring-cloud-study'
 include 'product'
 include 'eureka-server'
 include 'display'
+include 'zuul'
+include 'zuul'
+
